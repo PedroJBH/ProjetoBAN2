@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class AutorDAO {
-    // CREATE
+    
     public void create(Autor autor) {
         String sql = "INSERT INTO autor (nome) VALUES (?)";
         try (Connection conn = DatabaseManager.getConnection();
@@ -18,7 +18,6 @@ public class AutorDAO {
         }
     }
 
-    // READ
     public Autor read(int id) {
         String sql = "SELECT * FROM autor WHERE id_autor = ?";
         try (Connection conn = DatabaseManager.getConnection();
@@ -55,7 +54,6 @@ public class AutorDAO {
         return autores;
     }
 
-    // UPDATE
     public void update(Autor autor) {
         String sql = "UPDATE autor SET nome = ? WHERE id_autor = ?";
         try (Connection conn = DatabaseManager.getConnection();
@@ -73,7 +71,6 @@ public class AutorDAO {
         }
     }
 
-    // DELETE
     public void delete(int id) {
         String sql = "DELETE FROM autor WHERE id_autor = ?";
         try (Connection conn = DatabaseManager.getConnection();
@@ -90,7 +87,6 @@ public class AutorDAO {
         }
     }
 
-    // Relatório: Livros por Autor
     public List<Livro> relatorioLivrosPorAutor(int idAutor) {
         List<Livro> livros = new ArrayList<>();
         String sql = "SELECT l.* FROM livro l JOIN livro_autor la ON l.id_livro = la.id_livro_fk WHERE la.id_autor_fk = ?";

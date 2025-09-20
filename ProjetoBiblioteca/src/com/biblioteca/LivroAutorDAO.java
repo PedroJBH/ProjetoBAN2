@@ -5,7 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class LivroAutorDAO {
-    // Processo de Negócio: Adicionar Autor a um Livro
+
     public void adicionarAutorALivro(int idLivro, int idAutor) {
         String sql = "INSERT INTO livro_autor (id_livro_fk, id_autor_fk) VALUES (?, ?)";
         try (Connection conn = DatabaseManager.getConnection();

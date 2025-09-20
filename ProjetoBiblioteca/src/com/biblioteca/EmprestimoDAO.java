@@ -7,7 +7,6 @@ import java.util.List;
 
 public class EmprestimoDAO {
 
-    // Processo de Negócio: Realizar Empréstimo
     public void realizarEmprestimo(int idLivro, int idUsuario) {
         String sql = "INSERT INTO emprestimo (id_livro_fk, id_usuario_fk, data_emprestimo, data_devolucao_prevista) VALUES (?, ?, ?, ?)";
         try (Connection conn = DatabaseManager.getConnection();
@@ -23,7 +22,6 @@ public class EmprestimoDAO {
         }
     }
 
-    // Processo de Negócio: Devolver Livro
     public void devolverLivro(int idEmprestimo) {
         String sql = "UPDATE emprestimo SET data_devolucao_real = ? WHERE id_emprestimo = ?";
         try (Connection conn = DatabaseManager.getConnection();
@@ -41,7 +39,6 @@ public class EmprestimoDAO {
         }
     }
 
-    // Relatório 1: Empréstimos Ativos
     public List<Emprestimo> relatorioEmprestimosAtivos() {
         List<Emprestimo> emprestimos = new ArrayList<>();
         String sql = "SELECT * FROM emprestimo WHERE data_devolucao_real IS NULL";
@@ -64,7 +61,6 @@ public class EmprestimoDAO {
         return emprestimos;
     }
 
-    // Relatório 3: Usuários com Empréstimos Atrasados
     public List<Usuario> relatorioUsuariosComAtraso() {
         List<Usuario> usuarios = new ArrayList<>();
         String sql = "SELECT DISTINCT u.* FROM usuario u JOIN emprestimo e ON u.id_usuario = e.id_usuario_fk WHERE e.data_devolucao_real IS NULL AND e.data_devolucao_prevista < CURRENT_DATE";

@@ -5,7 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UsuarioDAO {
-    // CREATE
+
     public void create(Usuario usuario) {
         String sql = "INSERT INTO usuario (nome, email, endereco) VALUES (?, ?, ?)";
         try (Connection conn = DatabaseManager.getConnection();
@@ -20,7 +20,6 @@ public class UsuarioDAO {
         }
     }
 
-    // READ
     public Usuario read(int id) {
         String sql = "SELECT * FROM usuario WHERE id_usuario = ?";
         try (Connection conn = DatabaseManager.getConnection();
@@ -61,7 +60,6 @@ public class UsuarioDAO {
         return usuarios;
     }
 
-    // UPDATE
     public void update(Usuario usuario) {
         String sql = "UPDATE usuario SET nome = ?, email = ?, endereco = ? WHERE id_usuario = ?";
         try (Connection conn = DatabaseManager.getConnection();
@@ -80,8 +78,7 @@ public class UsuarioDAO {
             System.err.println("Erro ao atualizar usuário: " + e.getMessage());
         }
     }
-
-    // DELETE
+    
     public void delete(int id) {
         String sql = "DELETE FROM usuario WHERE id_usuario = ?";
         try (Connection conn = DatabaseManager.getConnection();

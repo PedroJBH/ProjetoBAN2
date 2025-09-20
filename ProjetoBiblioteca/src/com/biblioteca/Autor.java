@@ -8,8 +8,7 @@ public class Autor {
         this.id = id;
         this.nome = nome;
     }
-
-    // Getters and Setters
+  
     public int getId() { return id; }
     public void setId(int id) { this.id = id; }
     public String getNome() { return nome; }
