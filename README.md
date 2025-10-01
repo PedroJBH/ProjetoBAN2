@@ -83,16 +83,4 @@ Erros comuns
 - **Sem permissão de escrita no diretório** → abra o terminal como administrador (Windows) ou use uma pasta com permissão.
 - **Nada acontece ao rodar** → confirme o `main` correto: `com.biblioteca.Main`.
 
-Sugestão de organização no repositório
---------------------------------------
-```
-ProjetoBiblioteca/
-  sqlite-jdbc-3.50.3.0.jar
-  biblioteca.db                # (ou) db/backup.sql
-  src/com/biblioteca/
-    *.java
-  out/                         # gerado após compilar
-  docs/
-    Projeto_Fase1.pdf
-  README_EXECUCAO.txt          # ESTE ARQUIVO
-```
+
