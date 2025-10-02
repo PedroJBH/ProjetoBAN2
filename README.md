@@ -31,7 +31,7 @@ Antes de iniciar, certifique-se de que os seguintes componentes estão instalado
 Para que os comandos funcionem corretamente, organize seus arquivos da seguinte forma. Crie uma pasta principal para o projeto (ex: `ProjetoBiblioteca`) e organize as subpastas como abaixo:
 
 ```
-ProjetoBiblioteca/
+bibliotecaDB/
 |
 ├── lib/
 |   └── sqlite-jdbc-3.43.2.2.jar  <-- Coloque o driver baixado aqui
