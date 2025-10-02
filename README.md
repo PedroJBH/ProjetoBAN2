@@ -19,7 +19,7 @@ Antes de iniciar, certifique-se de que os seguintes componentes estão instalado
       * Se o comando não for reconhecido ou a versão for inferior à 11, você precisará instalar ou atualizar o JDK.
 
   * **Driver JDBC para SQLite:**
-
+      O driver já está na pasta lib, mas caso haja necessidade de baixar o jdbc novamente siga esses passo:
       * **O que é?** É uma biblioteca (um arquivo `.jar`) que permite que uma aplicação Java se comunique com um banco de dados SQLite. O código depende disso para todas as operações de banco de dados.
       * **Onde obter?** Você pode baixar a versão mais recente do repositório oficial no GitHub:
           * **Link:** [https://github.com/xerial/sqlite-jdbc/releases](https://github.com/xerial/sqlite-jdbc/releases)
