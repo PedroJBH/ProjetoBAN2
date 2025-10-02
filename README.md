@@ -28,7 +28,7 @@ Antes de iniciar, certifique-se de que os seguintes componentes estão instalado
 
 #### **2. Estrutura de Arquivos**
 
-Para que os comandos funcionem corretamente, organize seus arquivos da seguinte forma. Crie uma pasta principal para o projeto (ex: `ProjetoBiblioteca`) e organize as subpastas como abaixo:
+Para que os comandos funcionem corretamente, organize seus arquivos da seguinte forma.  Baixe a pasta do projeto (`bibliotecaDB`) e  verifique se as subpastas estão organizadas como abaixo:
 
 ```
 bibliotecaDB/
