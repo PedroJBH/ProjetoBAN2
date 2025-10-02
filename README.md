@@ -1,6 +1,3 @@
-Com certeza. Com base na análise do código Java e da dependência do SQLite, preparei um guia completo com tudo que é necessário para compilar e executar seu projeto corretamente via linha de comando.
-
------
 
 ### **INSTRUÇÕES DE COMPILAÇÃO E EXECUÇÃO — PROJETO BIBLIOTECA (Fase 1)**
 
