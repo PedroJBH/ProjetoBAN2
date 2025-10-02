@@ -24,7 +24,7 @@ Antes de iniciar, certifique-se de que os seguintes componentes estão instalado
       * **O que é?** É uma biblioteca (um arquivo `.jar`) que permite que uma aplicação Java se comunique com um banco de dados SQLite. Seu código depende disso para todas as operações de banco de dados.
       * **Onde obter?** Você pode baixar a versão mais recente do repositório oficial no GitHub:
           * **Link:** [https://github.com/xerial/sqlite-jdbc/releases](https://github.com/xerial/sqlite-jdbc/releases)
-          * **Arquivo a baixar:** Procure o arquivo `.jar` mais recente, por exemplo, `sqlite-jdbc-3.43.2.2.jar`.
+          * **Arquivo a baixar:** Procure o arquivo `.jar` mais recente, por exemplo, `sqlite-jdbc-3.50.3.0.jar`.
 
 #### **2. Estrutura de Arquivos**
 
@@ -34,7 +34,7 @@ Para que os comandos funcionem corretamente, organize seus arquivos da seguinte 
 bibliotecaDB/
 |
 ├── lib/
-|   └── sqlite-jdbc-3.43.2.2.jar  <-- Coloque o driver baixado aqui
+|   └── sqlite-jdbc-3.50.3.0.jar  <-- Coloque o driver baixado aqui
 |
 ├── src/                          <-- Coloque seus arquivos .java aqui
 |   └── com/
@@ -66,11 +66,11 @@ A compilação transformará seus arquivos de código-fonte (`.java`) em bytecod
 
       * **No Windows:**
         ```cmd
-        javac -d bin -cp "lib\sqlite-jdbc-3.43.2.2.jar" src\com\biblioteca\*.java
+        javac -d bin -cp "lib\sqlite-jdbc-3.50.3.0.jar" src\com\biblioteca\*.java
         ```
       * **No Linux ou macOS:**
         ```sh
-        javac -d bin -cp "lib/sqlite-jdbc-3.43.2.2.jar" src/com/biblioteca/*.java
+        javac -d bin -cp "lib/sqlite-jdbc-3.50.3.0.jar" src/com/biblioteca/*.java
         ```
 
     Após a execução, uma nova pasta `bin` será criada com a mesma estrutura de pacotes e os arquivos `.class` dentro dela.
@@ -83,11 +83,11 @@ Agora que o projeto está compilado, você pode executá-lo.
 
       * **No Windows:**
         ```cmd
-        java -cp "bin;lib\sqlite-jdbc-3.43.2.2.jar" com.biblioteca.Main
+        java -cp "bin;lib\sqlite-jdbc-3.50.3.0.jar" com.biblioteca.Main
         ```
       * **No Linux ou macOS:**
         ```sh
-        java -cp "bin:lib/sqlite-jdbc-3.43.2.2.jar" com.biblioteca.Main
+        java -cp "bin:lib/sqlite-jdbc-3.50.3.0.jar" com.biblioteca.Main
         ```
 
     **Atenção:** Note a diferença no separador do classpath: ponto e vírgula (`;`) para Windows e dois pontos (`:`) para Linux/macOS.
