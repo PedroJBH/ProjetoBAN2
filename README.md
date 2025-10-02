@@ -12,7 +12,6 @@ Antes de iniciar, certifique-se de que os seguintes componentes estão instalado
 
   * **Java Development Kit (JDK) - Versão 11 ou superior:**
 
-      * **O que é?** É o conjunto de ferramentas da Oracle/OpenJDK para desenvolver e compilar aplicações Java. Ele inclui o compilador (`javac`) e a máquina virtual (`java`).
       * **Como verificar se está instalado?** Abra um terminal ou prompt de comando e digite:
         ```sh
         java -version
@@ -21,7 +20,7 @@ Antes de iniciar, certifique-se de que os seguintes componentes estão instalado
 
   * **Driver JDBC para SQLite:**
 
-      * **O que é?** É uma biblioteca (um arquivo `.jar`) que permite que uma aplicação Java se comunique com um banco de dados SQLite. Seu código depende disso para todas as operações de banco de dados.
+      * **O que é?** É uma biblioteca (um arquivo `.jar`) que permite que uma aplicação Java se comunique com um banco de dados SQLite. O código depende disso para todas as operações de banco de dados.
       * **Onde obter?** Você pode baixar a versão mais recente do repositório oficial no GitHub:
           * **Link:** [https://github.com/xerial/sqlite-jdbc/releases](https://github.com/xerial/sqlite-jdbc/releases)
           * **Arquivo a baixar:** Procure o arquivo `.jar` mais recente, por exemplo, `sqlite-jdbc-3.50.3.0.jar`.
@@ -48,8 +47,6 @@ bibliotecaDB/
 └── (outros arquivos, como o banco de dados 'biblioteca.db' que será criado aqui)
 ```
 
-**Importante:** Mover os arquivos `.java` para a estrutura `src/com/biblioteca` é **essencial** para que a compilação a partir da pasta raiz funcione.
-
 #### **3. Passos para Compilação**
 
 A compilação transformará seus arquivos de código-fonte (`.java`) em bytecode executável (`.class`).
@@ -59,7 +56,7 @@ A compilação transformará seus arquivos de código-fonte (`.java`) em bytecod
 2.  **Navegue até a pasta raiz do seu projeto** (a pasta `ProjetoBiblioteca`).
 
     ```sh
-    cd caminho/para/ProjetoBiblioteca
+    cd caminho/para/bibliotecaDB
     ```
 
 3.  **Execute o comando de compilação.** Este comando diz ao compilador Java (`javac`) para criar os arquivos `.class` em uma nova pasta `bin`, usando o driver SQLite que está na pasta `lib`.
@@ -90,13 +87,11 @@ Agora que o projeto está compilado, você pode executá-lo.
         java -cp "bin:lib/sqlite-jdbc-3.50.3.0.jar" com.biblioteca.Main
         ```
 
-    **Atenção:** Note a diferença no separador do classpath: ponto e vírgula (`;`) para Windows e dois pontos (`:`) para Linux/macOS.
-
 #### **5. O Que Esperar**
 
-Se tudo correu bem, você verá o seguinte:
+Se tudo ocorreu bem, você verá o seguinte:
 
-1.  Um novo arquivo chamado **`biblioteca.db`** será criado na pasta raiz do projeto (`ProjetoBiblioteca/`).
+1.  Um novo arquivo chamado **`biblioteca.db`** será criado na pasta raiz do projeto (`bibliotecaDB/`), caso ele não exista. 
 2.  No seu terminal, a aplicação exibirá a mensagem de inicialização e o menu principal:
     ```
     Banco de dados inicializado com sucesso.
