@@ -102,6 +102,8 @@ Se tudo ocorreu bem, você verá o seguinte:
 
 Sua aplicação está funcionando corretamente.
 
+
+
 **EXECUTANDO O PROJETO BIBLIOTECA NO INTELLIJ IDEA**
 
 Este guia assume que você já tem o IntelliJ IDEA instalado e os arquivos do projeto organizados conforme discutimos anteriormente.
