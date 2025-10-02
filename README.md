@@ -77,10 +77,4 @@ Reset do banco
 - Para “zerar”, **exclua `biblioteca.db`** e execute novamente a aplicação.
   O schema e os dados de exemplo serão recriados automaticamente.
 
-Erros comuns
-------------
-- **`ClassNotFoundException: org.sqlite.JDBC`** → o `sqlite-jdbc-3.50.3.0.jar` não está no classpath (revise `-cp`: `:` em Linux/macOS, `;` em Windows).
-- **Sem permissão de escrita no diretório** → abra o terminal como administrador (Windows) ou use uma pasta com permissão.
-- **Nada acontece ao rodar** → confirme o `main` correto: `com.biblioteca.Main`.
-
 
