@@ -11,7 +11,7 @@ Stack do projeto
 Pré-requisitos
 --------------
 1) Java JDK 17+ instalado (verifique com `java -version` e `javac -version`).
-2) Estar dentro da pasta do projeto **ProjetoBiblioteca/**, contendo:
+2) Estar dentro da pasta do projeto **bibliotecaBD/**, contendo:
    - `src/com/biblioteca/*.java`
    - `sqlite-jdbc-3.50.3.0.jar`
    - (opcional) `biblioteca.db` — será criado automaticamente na primeira execução, se não existir.
@@ -19,7 +19,7 @@ Pré-requisitos
 Compilação
 ----------
 ### Linux / macOS (Bash / Zsh)
-> Dentro de `ProjetoBiblioteca/`:
+> Dentro de `bibliotecaBD/`:
 ```
 mkdir -p out
 javac -cp .:sqlite-jdbc-3.50.3.0.jar src/com/biblioteca/*.java -d out
