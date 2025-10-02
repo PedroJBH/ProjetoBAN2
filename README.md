@@ -106,8 +106,6 @@ Sua aplicação está funcionando corretamente.
 
 **EXECUTANDO O PROJETO BIBLIOTECA NO INTELLIJ IDEA**
 
-Este guia assume que você já tem o IntelliJ IDEA instalado e os arquivos do projeto organizados conforme discutimos anteriormente.
-
 #### **1. Pré-Requisitos**
 
 1.  **IntelliJ IDEA Community Edition:** A versão gratuita é suficiente.
@@ -141,9 +139,7 @@ O IntelliJ precisa saber qual JDK usar para compilar seu código.
 3.  No campo **SDK**, certifique-se de que um JDK (ex: `11`, `17`, etc.) está selecionado. Se estiver vazio ou mostrando `<No SDK>`, clique no menu dropdown, selecione `Add SDK` \> `JDK...`, e navegue até a pasta onde seu JDK está instalado.
 4.  Clique em **"OK"** para fechar a janela.
 
-**Passo 3: Adicionar o Driver do SQLite como Dependência (O Passo Mais Importante\!)**
-
-Você precisa direcionar o IntelliJ onde encontrar o arquivo `.jar` do SQLite.
+**Passo 3: Adicionar o Driver do SQLite como Dependência**
 
 1.  Vá novamente em `File` \> `Project Structure...`.
 2.  Na seção `Project Settings`, selecione `Modules`.
